@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
-    "webpack": "webpack"
+    "webpack": "webpack -w"
   },
   "author": "Rommel Castro",
   "license": "MIT",
