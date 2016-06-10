@@ -1,12 +1,12 @@
 "use strict";
 
-const express = require( 'express' );
+const express = require('express');
 
 // create app
 const app = express();
 
-app.use( express.static( 'public' ) );
+app.use(express.static('public'));
 
-app.listen( 3000, function () {
-	console.log( 'Express server is up on port 3000' );
-} );
+app.listen(3000, function () {
+  console.log('Express server is up on port 3000');
+});
