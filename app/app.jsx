@@ -1,9 +1,14 @@
 "use strict";
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Route, Router, IndexRoute, hasHistory} from 'react-router';
+
+import Main from './components/Main';
 
 ReactDOM.render(
-    <h1>Boilerplate app</h1>,
+    <Router history={hasHistory}>
+        <Route path="/" component={Main}/>
+    </Router>,
     document.getElementById('app')
 );
