@@ -2,14 +2,16 @@
 
 import React from 'react';
 
-import Nav from './Nav';
+import Header from './Header';
 
 class Main extends React.Component {
     render() {
         return (
             <div>
-                <Nav />
-                <h2>main component</h2>
+                <Header location={this.props.location}/>
+                <div className="row">
+                    {this.props.children}
+                </div>
             </div>
         );
     }
