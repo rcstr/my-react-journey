@@ -11,6 +11,7 @@
   "author": "Rommel Castro",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.5",
     "express": "^4.13.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
