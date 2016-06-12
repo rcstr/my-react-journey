@@ -10,6 +10,7 @@ class Nav extends React.Component {
       <ul className="dropdown menu">
         <NavLink to="/" location={this.props.location}>Get Weather</NavLink>
         <NavLink to="/about" location={this.props.location}>About</NavLink>
+        <NavLink to="/examples" location={this.props.location}>Examples</NavLink>
       </ul>
     );
   }
