@@ -8,6 +8,9 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    alias: {
+      'RowColumn': 'app/components/RowColumn.jsx'
+    },
     extensions: ['', '.js', '.jsx']
   },
   module: {
