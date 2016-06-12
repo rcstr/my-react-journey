@@ -9,8 +9,10 @@ export default class Header extends React.Component {
         <div className="top-bar-title">
           <strong>React Weather</strong>
         </div>
-        <div className="top-bar-left">
-          <Nav location={this.props.location}/>
+        <div>
+          <div className="top-bar-left">
+            <Nav location={this.props.location}/>
+          </div>
         </div>
       </header>
     );

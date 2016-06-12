@@ -5,13 +5,13 @@ import classNames from 'classnames';
 export default class NavLink extends React.Component {
   /**
    * gets url element based on to
-   * 
+   *
    * @param to
    * @param content
    * @returns {XML}
      */
   getURLElem(to, content) {
-    return (to === '/') ? <IndexLink to={to}>{content}</IndexLink> : <Link to={this.props.to}>{content}</Link>;
+    return (to === '/') ? <IndexLink to={to}>{content}</IndexLink> : <Link to={to}>{content}</Link>;
   }
 
 
@@ -28,7 +28,7 @@ export default class NavLink extends React.Component {
     });
   }
 
-  
+
   render() {
     let activeClassName = this.getActiveClassName(this.props.to, this.props.location.pathname);
     let URL = this.getURLElem(this.props.to, this.props.children);
