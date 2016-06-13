@@ -10,7 +10,7 @@ module.exports = {
     root: __dirname,
     alias: {
       'RowColumn': 'app/components/RowColumn.jsx',
-      'openWeatherMap':'app/services/openWeatherMap.js'
+      'openWeatherMap': 'app/services/openWeatherMap.js'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -25,5 +25,6 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  }
+  },
+  devtool: 'cheap-module-eval-source-map'
 };
