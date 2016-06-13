@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class WeatherMessage extends React.Component {
-  render() {
-    let {temp, location} = this.props;
+const WeatherMessage = (props) => {
+  let {temp, location} = props;
 
-    return (
-      <h3>It's it {temp} in {location}!</h3>
-    );
-  }
-}
+  return (
+    <h3>It's it {temp} in {location}!</h3>
+  );
+};
+
+export default WeatherMessage;

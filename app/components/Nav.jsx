@@ -4,16 +4,12 @@ import React from 'react';
 
 import NavLink from './NavLink';
 
-class Nav extends React.Component {
-  render() {
-    return (
-      <ul className="dropdown menu">
-        <NavLink to="/" location={this.props.location}>Get Weather</NavLink>
-        <NavLink to="/about" location={this.props.location}>About</NavLink>
-        <NavLink to="/examples" location={this.props.location}>Examples</NavLink>
-      </ul>
-    );
-  }
-}
-
-export default Nav;
+const Nav = (props) => {
+  return (
+    <ul className="dropdown menu">
+      <NavLink to="/" location={props.location}>Get Weather</NavLink>
+      <NavLink to="/about" location={props.location}>About</NavLink>
+      <NavLink to="/examples" location={props.location}>Examples</NavLink>
+    </ul>
+  );
+};

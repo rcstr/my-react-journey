@@ -4,17 +4,15 @@ import React from 'react';
 
 import Header from './Header';
 
-class Main extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header location={this.props.location}/>
-        <div className="row">
-          {this.props.children}
-        </div>
+const Main = (props) => {
+  return (
+    <div>
+      <Header location={props.location}/>
+      <div className="row">
+        {props.children}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Main;

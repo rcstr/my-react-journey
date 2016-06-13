@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default class RowColumn extends React.Component {
-  render() {
-    return (<div className="row columns">{this.props.children}</div>);
-  }
-}
+const RowColumn = (props) => {
+  return (<div className="row columns">{props.children}</div>);
+};
+
+export default RowColumn;
