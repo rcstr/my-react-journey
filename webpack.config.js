@@ -9,7 +9,8 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-      'RowColumn': 'app/components/RowColumn.jsx'
+      'RowColumn': 'app/components/RowColumn.jsx',
+      'openWeatherMap':'app/services/openWeatherMap.js'
     },
     extensions: ['', '.js', '.jsx']
   },
