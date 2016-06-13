@@ -10,7 +10,7 @@ const Header = (props) => {
       </div>
       <div>
         <div className="top-bar-left">
-          <Nav location={this.props.location}/>
+          <Nav location={props.location}/>
         </div>
       </div>
     </header>
